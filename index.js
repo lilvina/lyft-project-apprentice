@@ -13,9 +13,8 @@ server.post('/test', (req, res) => {
   let finalStr = ""
 
   while(pointer < string_to_cut.length) {
-    if(pointer % 3 === 0 && pointer >= 3) {
-      finalStr += string_to_cut[pointer - 1]
-    }
+    if(pointer % 3 === 0 && pointer >= 3) finalStr += string_to_cut[pointer - 1]
+    
     pointer++
   }
 
